@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<EditText
+		android:layout_height="wrap_content"
+		android:id="@+id/etMainField"
+		android:layout_width="fill_parent"
+		android:hint="@string/editText_hint">
+		<requestFocus></requestFocus>
+	</EditText>
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_width="fill_parent">
+		<Button
+			android:layout_height="wrap_content"
+			android:id="@+id/btnShowInToast"
+			android:text="@string/button_showToast"
+			android:layout_weight="1"
+			android:layout_width="fill_parent"></Button>
+		<Button
+			android:layout_height="wrap_content"
+			android:id="@+id/btnShowInTextView"
+			android:text="@string/button_changeTextView"
+			android:layout_weight="1"
+			android:layout_width="fill_parent"></Button>
+	</LinearLayout>
+	<TextView
+		android:layout_height="wrap_content"
+		android:text="TextView"
+		android:layout_width="wrap_content"
+		android:id="@+id/tvMainTextView"></TextView>
+</LinearLayout>
